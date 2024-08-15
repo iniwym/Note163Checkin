@@ -2,7 +2,8 @@ name: Run
 
 on:
   workflow_dispatch:
-  repository_dispatch:
+  schedule:
+    - cron: "30 22 * * *" # 北京时间上午06:30
 
 jobs:
   build:
